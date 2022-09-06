@@ -1,0 +1,107 @@
+.taskWrapper {
+  display: flex;
+  align-items: center;
+  background-color: var(--gray-500);
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 0.75rem;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.checkWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.taskWrapper input[type=checkbox] {
+  display: none;
+}
+
+.checkBoxLabelUnchecked {
+  padding-top: 0.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.75rem;
+  height: 1.5rem;
+  width: 1.5rem;
+  background-color: transparent;
+  border-radius: 999px;
+  border: 2px solid var(--blue);
+  color: var(--white);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.checkBoxLabelChecked {
+  padding-top: 0.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.75rem;
+  height: 1.5rem;
+  width: 1.5rem;
+  background-color: transparent;
+  border-radius: 999px;
+  border: 2px solid var(--blue-dark);
+  color: var(--white);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  background-color: var(--blue-dark);
+  transition: all 0.2s ease-in-out;
+}
+
+.checkBoxLabelChecked:hover {
+  border: 2px solid var(--blue);
+  background-color: var(--blue);
+}
+
+.checkBoxLabelUnchecked:hover {
+  border: 2px solid var(--blue-dark);
+  background-color: var(--gray-600);
+}
+
+.unchecked {
+  opacity: 0;
+}
+
+.checked {
+  opacity: 100;
+}
+
+.check {
+  margin-top: -5rem;
+}
+
+.task {
+  color: var(--gray-100);
+  font-size: 0.875rem;
+  max-width: 30rem;
+  word-wrap: break-word;
+}
+
+.checkedTask {
+  color: var(--gray-300);
+  font-size: 0.875rem;
+  text-decoration: line-through;
+}
+
+.taskWrapper > button {
+  background: transparent;
+  color: var(--gray-300);
+  border-radius: 4px;
+  display: flex;
+  border: none;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease-in-out;
+  padding: 0.2rem;
+  margin-left: 0.5rem;
+}
+
+.taskWrapper > button:hover {
+  color: var(--danger);
+  background-color: var(--gray-400);
+}
